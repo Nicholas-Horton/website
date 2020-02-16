@@ -1,0 +1,50 @@
+@require './base16-gruvbox.dark.css.styl'
+
+{$contentClass}
+  code
+    color lighten(#EBDBB2, 20%)
+    padding 0.1rem 0.4rem
+    margin 0.1rem
+    font-size 1em
+    background-color rgba(27,31,35,0.05)
+    .token
+      &.deleted
+        text-decoration none
+        color #FB4934
+      &.inserted
+        border-bottom none
+        color #B8BB26
+  code[class*="language-"], pre[class*="language-"]
+    font-size 1em
+
+{$contentClass}
+  pre, pre[class*="language-"]
+    background-color $codeBgColor
+    code
+      color #EBDBB2
+      padding 0
+      background-color transparent
+      border-radius 0
+
+div[class*="language-"]
+  &::before
+    color #665c54
+  &.line-numbers-mode
+    .highlight-lines .highlighted
+        background-color rgba(255, 255, 255, 0.05)
+        &::before
+          background-color transparent
+    .line-numbers-wrapper
+      color #665c54
+    &::after
+      border-right-color rgba(0, 0, 0, 0.3)
+
+div[class~="language-cpp"]:before
+  content "c++"
+
+div[class~="language-shell"]:before
+  content "sh"
+
+div[class~="language-bash"]:before
+  content "bash"
+

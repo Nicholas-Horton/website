@@ -1,0 +1,44 @@
+@require './code.styl'
+
+// FIXME: Rewrite own theme and remove
+.header-wrapper .title a,
+.header-wrapper .header-right-wrap .nav .nav-item a,
+#mobile-header .mobile-header-title .mobile-home-link,
+.mobile-header-bar,
+.vuepress-blog-theme-content,
+.ui-post-title,
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#vuepress-theme-blog__global-layout {
+  flex: 1;
+  color: $textColor;
+  background-color: $pageBgColor;
+  height: 100vh;
+}
+
+#header,
+#mobile-header .mobile-header-bar {
+  background-color: $headerBackgroundColor;
+}
+
+#header .title a,
+#mobile-header .mobile-header-title a.mobile-home-link,
+#mobile-header .mobile-header-title svg {
+  color: $headerColor;
+}
+
+#footer {
+  display: none !important;
+}
+
+@media(max-width: $MQMobile)
+  .content__default:not(.custom) > h1:first-child {
+    padding-top: 3rem;
+  }
