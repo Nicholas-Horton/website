@@ -1,7 +1,7 @@
 ---
 title: test post please ignore
 date: 2020-02-15
-author: nhorton
+author: Nicholas Horton
 tags:
   - Learning
   - Vue
