@@ -60,7 +60,7 @@ $wrapper
   background-color transparent
 
   @media (min-width: $MQNarrow)
-    box-shadow 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.07)
+    box-shadow 0 10px 20px rgba(0, 0, 0, 0.10), 0 5px 12px rgba(0, 0, 0, 0.20)
     background-color $bgColor
 
   .post-title

@@ -1,7 +1,7 @@
 module.exports = {
   title: "~nhorton/",
   theme: "@vuepress/blog",
-  description: "Welcome to the blog, folks!",
+  description: "The wonderful world of software development.",
   markdown: {
     lineNumbers: true
   },
@@ -28,7 +28,7 @@ module.exports = {
       ],
       copyright: [
         {
-          text: "MIT Licenced | Copyright © 2020 Nicholas Horton",
+          text: "Copyright © 2022 Nicholas Horton",
           link: ""
         }
       ]
